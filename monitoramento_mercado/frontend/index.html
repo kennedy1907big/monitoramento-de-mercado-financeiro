@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<title>Monitoramento de Mercado Financeiro</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<link rel="stylesheet" href = "https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+
+<h1 class="titulo">📊 Monitoramento de Mercado Financeiro</h1>
+
+<div class="container">
+
+<div class="painel">
+
+<div class="ativo bitcoin alta">
+<h2>Bitcoin</h2>
+<p id="btc">350000</p>
+<span class= "tendencia tendencia-alta">Alta</span>
+</div>
+
+<div class="ativo ethereum estavel">
+<h2>Ethereum</h2>
+<p id="eth">18000</p>
+<span class= "tendencia tendencia-estavel">Estavel</span>
+</div>
+
+<div class="ativo petr4 baixa">
+<h2>PETR4</h2>
+<p id="petr4">36.10</p>
+<span class= "tendencia tendencia-baixa">Baixa</span>
+</div>
+
+<div class="ativo vale3 alta">
+<h2>VALE3</h2>
+<p id="vale">68.50</p>
+<span class= "tendencia tendencia-alta">Alta</span>
+</div>
+
+</div>
+
+<div class="grafico">
+
+<canvas id="grafico"></canvas>
+
+</div>
+
+<h2>Mercados Globais</h2>
+<div class="mapa-mercados">
+    <div class="mercado alta">
+        <h3>S&P 500</h3>
+        <p>+1.2%</p>
+    </div>
+
+<div class="mercado baixa">
+    <h3>NASDAQ</h3>
+    <p>-0.8%</p>
+</div>
+
+<div class="mercado alta">
+    <h3>IBOVESPA</h3>
+    <p>+0.4%</p>
+</div>
+
+<div class="mercado baixa">
+    <h3>NIKKEI</h3>
+    <p>-0.2%</p>
+</div>
+
+</div>
+
+<h2>Heatmap da Bolsa</h2>
+
+<div class="heatmap">
+
+<div class="bloco grande" data-acao="PETR4"></div>
+<div class="bloco grande" data-acao="VALE3"></div>
+
+<div class="bloco medio" data-acao="ITUB4"></div>
+<div class="bloco medio" data-acao="BBDC4"></div>
+<div class="bloco medio" data-acao="WEGE3"></div>
+
+<div class="bloco pequeno" data-acao="BBAS3"></div>
+<div class="bloco pequeno" data-acao="MGLU3"></div>
+<div class="bloco pequeno" data-acao="LREN3"></div>
+
+</div>
+
+</div>
+
+<h2>Mapa Mundial de Mercados</h2>
+<div id="mapa" style="height: 400px;"></div>
+<div id ="mapaMercado"></div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<div id = "graficoTrading"></div>
+<script src= "https://s3.trandingview.com/tv.js"></script>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>
